@@ -13,6 +13,9 @@ from parsl.providers.pbspro.pbspro import PBSProProvider
 from parsl.providers.slurm.slurm import SlurmProvider
 from parsl.providers.torque.torque import TorqueProvider
 
+# API
+from parsl.providers.nersc_sfapi.nersc_sfapi import NerscSfapiProvider
+
 __all__ = ['LocalProvider',
            'CondorProvider',
            'GridEngineProvider',
@@ -23,4 +26,5 @@ __all__ = ['LocalProvider',
            'AWSProvider',
            'GoogleCloudProvider',
            'KubernetesProvider',
-           'AzureProvider']
+           'AzureProvider',
+           'NerscSfapiProvider']
